@@ -1,0 +1,8 @@
+CREATE TABLE `base_role` (
+  `ID` varchar(36) NOT NULL,
+  `ROLE_CODE` varchar(64) DEFAULT NULL,
+  `ROLE_NAME` varchar(64) DEFAULT NULL,
+  `CREATE_DATE` datetime DEFAULT NULL,
+  `UPDATE_DATE` datetime DEFAULT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
