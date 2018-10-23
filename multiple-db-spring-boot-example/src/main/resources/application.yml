@@ -1,0 +1,41 @@
+
+#springboot多数据源配置
+#数据源1
+spring.datasource.db1.url: jdbc:mysql://127.0.0.1:3306/main-data?useUnicode=true&characterEncoding=utf-8&useSSL=false
+spring.datasource.db1.username: fangp
+spring.datasource.db1.password: '000000'
+spring.datasource.db1.driver-class-name: com.mysql.jdbc.Driver
+spring.datasource.db1.filters: stat, wall
+spring.datasource.db1.max-active: 20
+spring.datasource.db1.initial-size: 1
+spring.datasource.db1.max-wait: 60000
+spring.datasource.db1.min-idle: 1
+spring.datasource.db1.useGlobalDataSourceStat: true
+spring.datasource.db1.time-between-eviction-runs-millis: 60000
+spring.datasource.db1.min-evictable-idle-time-millis: 300000
+spring.datasource.db1.validation-query: select 'x'
+spring.datasource.db1.pool-prepared-statements: true
+spring.datasource.db1.max-open-prepared-statements: 20
+
+
+#数据源2
+spring.datasource.db2.url: jdbc:mysql://127.0.0.1:3306/main-data?useUnicode=true&characterEncoding=utf-8&useSSL=false
+spring.datasource.db2.username: fangp
+spring.datasource.db2.password: '72943816'
+spring.datasource.db2.driver-class-name: com.mysql.jdbc.Driver
+
+
+spring.datasource.db3.url: jdbc:mysql://127.0.0.1:3306/main-data?useUnicode=true&characterEncoding=utf-8&useSSL=false
+spring.datasource.db3.username: fangp
+spring.datasource.db3.password: '000000'
+spring.datasource.db3.driver-class-name: com.mysql.jdbc.Driver
+
+
+spring.datasource.db4.url: jdbc:mysql://127.0.0.1:3306/main-data?useUnicode=true&characterEncoding=utf-8&useSSL=false
+spring.datasource.db4.username: fangp
+spring.datasource.db4.password: '72943816'
+spring.datasource.db4.driver-class-name: com.mysql.jdbc.Driver
+
+#mybatis
+mybatis.mapper-locations: classpath*:mybatis/mapper/*.xml
+mybatis.type-aliases-package: com.peng.mybatis.multiple.db.example.mapper.mapper

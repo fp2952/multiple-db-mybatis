@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.peng.mybatis.multiple.db.aop.DynamicDataSourceAspect,\
+com.peng.mybatis.multiple.db.config.druid.DruidStatFilter,\
+com.peng.mybatis.multiple.db.config.druid.DruidStatViewServlet,\
+com.peng.mybatis.multiple.db.config.mapper.MapperConfiguration,\
+com.peng.mybatis.multiple.db.config.pagehelper.PageHelperAutoConfiguration,\
+com.peng.mybatis.multiple.db.config.DataSourceConfig
